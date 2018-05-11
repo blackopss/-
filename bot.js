@@ -39,7 +39,7 @@ client.user.setGame(`!help`,"http://twitch.tv/S-F")
 
 
 client.on('message', message => {
-if (message.content.startsWith(PREFIX + 'help')) {
+if (message.content.startsWith('!help')) {
 	if(!message.channel.guild) return message.reply('**هذا الأمر للسيرفرات فقط**').then(m => m.delete(300));
 	let embed = new Discord.RichEmbed()
     .setAuthor(`${message.author.tag}`, message.author.avatarURL)
