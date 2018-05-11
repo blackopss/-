@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const { Client, Util } = require('discord.js');
 const moment = require('moment');
 const client = new Discord.Client();
-const devs = ['431150885549113344'];
+const devs = ['431150885549113344,423430644463566852'];
 const child_process = require("child_process");
 const adminprefix = ".";
 const { PREFIX, GOOGLE_API_KEY } = require('./config2');
@@ -31,7 +31,7 @@ if (message.content.startsWith(prefix + 'help')) {
   .addField("!stop","**لتوقيف لاغنيه**")
     .addField("!queue","**لتوقيف لاغنيه بشكل موقت**")
         .addField(".resume","**استئناف لاغنيه**")
-  .addField("مبرمج البوت","**» <@43115088554911334>**")
+  .addField("<@مبرمج البوت","**» <431150885549113344**")
 	          .addField("By server ","**» OyoZami**")
 .addField("**▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬**","** **")
 	message.channel.sendEmbed(embed).then(m => m.delete(18000));
